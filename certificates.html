@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>证书与荣誉 | 证据墙</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { padding: 10rem 0 3rem; text-align: center; }
+        .page-header p { color: var(--text-muted); max-width: 720px; margin: 1rem auto 0; }
+
+        .disclaimer {
+            max-width: 900px; margin: 0 auto 3rem; padding: 1rem 1.5rem;
+            border-radius: 0.75rem; color: var(--text-muted); font-size: 0.9rem;
+            border-left: 3px solid var(--primary);
+        }
+
+        .cert-group { max-width: 900px; margin: 0 auto 1.5rem; border-radius: 1rem; overflow: hidden; }
+        .cert-group summary {
+            cursor: pointer; padding: 1.1rem 1.5rem; display: flex;
+            justify-content: space-between; align-items: center;
+            font-weight: 600; font-size: 1.1rem; list-style: none;
+        }
+        .cert-group summary::-webkit-details-marker { display: none; }
+        .cert-group summary .count {
+            font-size: 0.85rem; color: var(--text-muted);
+            border: 1px solid var(--glass-border); border-radius: 999px;
+            padding: 0.1rem 0.8rem;
+        }
+        .cert-group .group-body { padding: 0 1.5rem 1.5rem; display: grid; gap: 1.25rem; }
+
+        .cert-card { padding: 1.5rem; border-radius: 1rem; display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        @media (min-width: 720px) { .cert-card.with-image { grid-template-columns: 220px 1fr; } }
+
+        .cert-card img.derived {
+            width: 100%; border-radius: 0.5rem; border: 1px solid var(--glass-border);
+            image-rendering: pixelated; background: #000;
+        }
+        .redacted-note { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.4rem; }
+
+        .cert-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.35rem; }
+        .cert-issuer { color: var(--text-muted); font-size: 0.95rem; }
+        .cert-issuer .former { font-size: 0.8rem; opacity: 0.8; }
+        .cert-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin: 0.75rem 0; font-size: 0.88rem; color: var(--text-muted); }
+        .cert-goal { font-size: 0.9rem; margin: 0.4rem 0 0.8rem; }
+        .cert-goal strong { color: var(--primary); font-weight: 600; }
+
+        .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+        .badge { font-size: 0.78rem; padding: 0.2rem 0.75rem; border-radius: 999px; font-weight: 600; }
+        .badge-valid     { background: rgba(16,185,129,.18); color: #34d399; border: 1px solid rgba(16,185,129,.4); }
+        .badge-expiring  { background: rgba(245,158,11,.16); color: #fbbf24; border: 1px solid rgba(245,158,11,.4); }
+        .badge-expired   { background: rgba(148,163,184,.15); color: #94a3b8; border: 1px solid rgba(148,163,184,.35); }
+        .badge-revoked   { background: rgba(239,68,68,.16); color: #f87171; border: 1px solid rgba(239,68,68,.4); }
+        .badge-self      { background: rgba(99,102,241,.15); color: #a5b4fc; border: 1px solid rgba(99,102,241,.35); }
+        .badge-checked   { background: rgba(56,189,248,.15); color: #38bdf8; border: 1px solid rgba(56,189,248,.35); }
+        .badge-linkfail  { background: rgba(249,115,22,.15); color: #fb923c; border: 1px solid rgba(249,115,22,.35); }
+
+        .verify-link { font-size: 0.85rem; color: var(--primary); word-break: break-all; }
+        .verify-note { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
+
+        .sort-note { text-align: center; color: var(--text-muted); font-size: 0.85rem; margin: 2.5rem auto 0; max-width: 700px; }
+        .wall-status { text-align: center; color: var(--text-muted); padding: 3rem 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">灵墨创意</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="hobbies.html">兴趣爱好</a></li>
+                    <li><a href="portfolio.html">个人作品</a></li>
+                    <li><a href="certificates.html">证书荣誉</a></li>
+                    <li><a href="contact.html">联系我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>证书与荣誉</h1>
+            <p>每一项证书都可追溯其证据链: 签发方、有效期、核对记录与脱敏后的证书影像。
+               状态由系统根据有效期与核对记录实时计算, 页面不做任何含金量评分。</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="disclaimer glass" id="verification-note">
+            状态说明: <strong>自报</strong> 表示站主录入、来源尚未核对;
+            <strong>已核对来源</strong> 仅表示验证链接当前仍可访问, 不构成权威机构对证书真实性的认证;
+            <strong>链接失效</strong> 表示登记来源暂时不可访问。证书图片均已脱敏, 原件不公开展示。
+        </div>
+        <main id="wall">
+            <div class="wall-status">证据数据加载中…</div>
+        </main>
+        <p class="sort-note" id="sort-note"></p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 灵墨创意 · 证书证据墙由证书证据管理系统驱动</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/certificates.js"></script>
+</body>
+</html>
