@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="安全开发证书脱敏派生图">
+  <rect width="640" height="360" rx="28" fill="#0f172a"/>
+  <rect x="28" y="28" width="584" height="304" rx="20" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="56" y="88" fill="#f8fafc" font-size="30" font-family="sans-serif" font-weight="700">安全开发生命周期实践者</text>
+  <text x="56" y="132" fill="#93c5fd" font-size="18" font-family="sans-serif">星河安全基金会 · 公开脱敏派生图</text>
+  <path d="M320 166l70 28v58c0 48-31 78-70 92-39-14-70-44-70-92v-58z" fill="#1d4ed8" opacity=".35" stroke="#60a5fa"/>
+  <rect x="56" y="178" width="190" height="24" rx="5" fill="#334155"/>
+  <text x="56" y="256" fill="#cbd5e1" font-size="18" font-family="sans-serif">编号：SEC-****-****-8821</text>
+  <text x="56" y="294" fill="#94a3b8" font-size="16" font-family="sans-serif">午夜到期：2026-10-07 00:00 (Asia/Shanghai)</text>
+</svg>

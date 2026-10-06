@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="云原生证书脱敏派生图">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1e293b"/><stop offset="1" stop-color="#312e81"/></linearGradient></defs>
+  <rect width="640" height="360" rx="28" fill="url(#g)"/>
+  <rect x="28" y="28" width="584" height="304" rx="20" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="56" y="88" fill="#f8fafc" font-size="30" font-family="sans-serif" font-weight="700">云原生架构设计专业证书</text>
+  <text x="56" y="132" fill="#a5b4fc" font-size="18" font-family="sans-serif">云图认证院 · 公开脱敏派生图</text>
+  <rect x="56" y="168" width="250" height="26" rx="6" fill="#0f172a"/>
+  <rect x="66" y="176" width="210" height="10" rx="5" fill="#64748b"/>
+  <text x="56" y="238" fill="#cbd5e1" font-size="18" font-family="sans-serif">编号：NO. ****-****-1234</text>
+  <text x="56" y="276" fill="#94a3b8" font-size="16" font-family="sans-serif">有效期至：2027-03-15 23:59:59 (Asia/Shanghai)</text>
+  <circle cx="520" cy="190" r="52" fill="#6366f1" opacity=".35"/>
+  <path d="M500 190l15 15 30-35" fill="none" stroke="#a7f3d0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

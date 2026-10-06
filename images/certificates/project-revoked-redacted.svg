@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="项目管理证书撤销标记脱敏派生图">
+  <rect width="640" height="360" rx="28" fill="#1f2937"/>
+  <rect x="28" y="28" width="584" height="304" rx="20" fill="none" stroke="#f87171" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="56" y="90" fill="#f8fafc" font-size="30" font-family="sans-serif" font-weight="700">项目管理专业实践者证书</text>
+  <text x="56" y="134" fill="#fca5a5" font-size="18" font-family="sans-serif">远洲管理认证中心 · 已标记历史撤销</text>
+  <rect x="56" y="180" width="250" height="25" rx="5" fill="#374151"/>
+  <text x="56" y="258" fill="#cbd5e1" font-size="18" font-family="sans-serif">编号：PM-****-7302</text>
+  <text x="56" y="296" fill="#fca5a5" font-size="16" font-family="sans-serif">追溯撤销生效：2026-08-01 00:00 (Asia/Shanghai)</text>
+  <circle cx="500" cy="185" r="48" fill="#7f1d1d" opacity=".65"/>
+  <path d="M472 157l56 56M528 157l-56 56" stroke="#fecaca" stroke-width="10" stroke-linecap="round"/>
+</svg>

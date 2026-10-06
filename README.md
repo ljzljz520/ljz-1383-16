@@ -18,10 +18,17 @@
 - `hobbies.html`: 兴趣爱好列表 (L2)
 - `hobby-detail.html`: 摄影兴趣详情 (L3)
 - `portfolio.html`: 作品集列表 (L2)
+- `certificates.html`: 证书与奖项证据墙（文字事实、状态标签与公开脱敏派生图）
 - `work-detail.html`: Neo-Finance 应用案例 (L3)
 - `contact.html`: 联系表单页 (L2)
 - `css/style.css`: 全局样式表
+- `css/certificates.css`: 证书证据墙样式
 - `js/main.js`: 交互逻辑与表单验证
+- `js/certificates.js`: 证书状态、筛选、排序与事件链演示
+- `docs/certificate-evidence-architecture.md`: 证书证据管理架构、状态口径与验收用例
+- `docs/api-contract.md`: 管理 API 与公开 API 契约
+- `docs/acceptance-tests.md`: 并发、时区、撤销、图片失败等验收用例
+- `db/migrations/001_certificate_evidence.sql`: PostgreSQL 领域事件与证据表结构
 - `images/`: 项目多媒体资源
 
 ## 技术要点

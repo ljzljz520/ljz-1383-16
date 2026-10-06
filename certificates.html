@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>证书与奖项证据墙 | 林墨</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/certificates.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="toast-container"></div>
+
+  <header class="scrolled">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">灵墨创意</a>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="hobbies.html">兴趣爱好</a></li>
+          <li><a href="portfolio.html">个人作品</a></li>
+          <li><a href="certificates.html">证书奖项</a></li>
+          <li><a href="contact.html">联系我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="certificate-page">
+    <section class="certificate-hero container">
+      <p class="eyebrow">EVIDENCE WALL</p>
+      <h1>证书与奖项证据墙</h1>
+      <p class="lede">
+        这里展示可公开的文字事实与脱敏派生图；含个人编号的原始图片只保留在私密存储。
+        “链接可访问”只说明来源仍在，不自动等同于证书已被权威认证。
+      </p>
+      <div class="trust-note glass" role="note">
+        <strong>状态口径：</strong>
+        自报、来源核对、有效期和撤销状态分开呈现；排序只使用日期、名称或到期时间，不生成含金量评分。
+        本页当前为静态演示数据，生产环境由管理 API 和服务器权威时间生成。
+      </div>
+    </section>
+
+    <section class="container toolbar glass" aria-label="证书筛选与排序">
+      <div class="filter-group" role="group" aria-label="按状态筛选">
+        <button class="filter-chip active" type="button" data-filter="all">全部</button>
+        <button class="filter-chip" type="button" data-filter="valid">当前有效</button>
+        <button class="filter-chip" type="button" data-filter="self_reported">自报材料</button>
+        <button class="filter-chip" type="button" data-filter="source_verified">已核对来源</button>
+        <button class="filter-chip" type="button" data-filter="stale">链接失效</button>
+        <button class="filter-chip" type="button" data-filter="invalid">已过期/撤销</button>
+      </div>
+      <label class="sort-control">
+        排序
+        <select id="certificate-sort">
+          <option value="recent">最近事件</option>
+          <option value="expiry">到期时间近→远</option>
+          <option value="title">名称 A→Z</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="container">
+      <div id="result-meta" class="result-meta" aria-live="polite"></div>
+      <div id="certificate-grid" class="certificate-grid"></div>
+      <div id="empty-state" class="empty-state glass" hidden>没有符合当前筛选条件的证书或奖项。</div>
+    </section>
+  </main>
+
+  <template id="certificate-card-template">
+    <article class="certificate-card glass">
+      <div class="card-visual" aria-hidden="true"></div>
+      <div class="card-body">
+        <div class="badge-row"></div>
+        <h2></h2>
+        <p class="issuer"></p>
+        <p class="goal"></p>
+        <dl class="fact-list"></dl>
+        <p class="source-line"></p>
+        <details class="event-timeline">
+          <summary>查看事件链（补发、续期、新获奖分开）</summary>
+          <ol></ol>
+        </details>
+      </div>
+    </article>
+  </template>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <span class="logo">灵墨创意</span>
+          <p style="margin-top: 1rem; color: var(--text-muted);">证据可核验，状态不过度承诺。</p>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="portfolio.html">作品</a></li>
+          <li><a href="certificates.html">证书奖项</a></li>
+          <li><a href="contact.html">联系</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 林墨的个人主页. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/certificates.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

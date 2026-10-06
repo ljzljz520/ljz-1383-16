@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="DevOps 历史证书脱敏派生图">
+  <rect width="640" height="360" rx="28" fill="#172033"/>
+  <rect x="28" y="28" width="584" height="304" rx="20" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="56" y="90" fill="#f8fafc" font-size="30" font-family="sans-serif" font-weight="700">DevOps 流程自动化证书</text>
+  <text x="56" y="134" fill="#a5b4fc" font-size="18" font-family="sans-serif">海川技术学院 · 历史记录脱敏图</text>
+  <circle cx="460" cy="205" r="62" fill="none" stroke="#6366f1" stroke-width="10"/>
+  <path d="M425 205h70M460 170v70" stroke="#ec4899" stroke-width="8" stroke-linecap="round"/>
+  <text x="56" y="246" fill="#cbd5e1" font-size="18" font-family="sans-serif">编号：DO-****-0417</text>
+  <text x="56" y="284" fill="#fca5a5" font-size="16" font-family="sans-serif">已于 2025-12-31 到期</text>
+</svg>
